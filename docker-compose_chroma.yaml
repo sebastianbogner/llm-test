@@ -1,0 +1,7 @@
+version: '3'
+services:
+  vector-db:
+    image: chromadb/chroma
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
